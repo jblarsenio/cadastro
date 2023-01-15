@@ -1,0 +1,42 @@
+body{ 
+    background-color: white;
+}
+
+.box{
+display: flex;
+ justify-content: center;
+ align-items:center;
+
+}
+.direita{width: 50vw;
+    display: flex;
+
+}
+.esquerda {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+   position: 50%;
+    width: 90%;
+padding:10px;
+   
+}
+.sap{
+    display: none;
+    color: red;
+}
+
+button{
+ padding: 10px;
+ background-color: rgb(146,192, 227);
+border: none;
+}
+
+button:hover{
+background-color: aliceblue;
+}  

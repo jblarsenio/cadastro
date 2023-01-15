@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body> 
+    <div class="box">
+        <div class="direita "> <img src="cadastro.svg" alt="cadsatro"></div>
+        <div class="esquerda ">    
+        <form  id="form" action="">
+                <h1> Faca seu Cadastro !</h1>
+            <div>
+                <label for="nome" class=" label "> Nome </label><br>
+                <input type="text" placeholder="Nome" required class="req"  oninput="namevalidate()">
+                <samp class="sap">Nome com no minimo 4 letras</samp>
+            </div>
+                <br>
+            <div>
+                <label for="data"> Data de nascimento</label><br>
+                <input type="date">
+            </div> 
+             <br>
+            <div>
+                <label for="" class=" label">Endereço</label><br>
+                <input type="text" placeholder="Rua">
+                <input type="text" placeholder="Bairro">
+        
+            </div>
+            <br>
+            <div>
+                <label for=" " class=" label" > Email</label><br>
+                <input type="email"  placeholder="exemplo@email.com" class="req" oninput="emailvalidate()">
+                <samp class="sap">Dite um email valido</samp>
+            </div> 
+            <br>
+            <div>
+                <label for=""> Senha</label>
+                <input type="password" placeholder="senha" required class="req"  oninput="senha()">
+                <samp class="sap">Senha tem que ter 8 digitos </samp><br><br>
+                <label for="">Repita sua Senha </label>
+               
+                <input type="password" placeholder="Repitir a senha" required class="req" oninput="repitasenha()">
+                <samp class="sap">Senha tem que ser Igual</samp>
+            <br>
+            </div> 
+            <br>
+            <button type="submit">Enviar </button>
+        </form>
+        </div>
+    </div>
+    
+</body>
+<script src="scpt.js"></script>
+</html>
